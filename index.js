@@ -56,40 +56,8 @@ const questions = [
     }
 ];
 
-// Writes the README.MD file
 
-// function writeToFile(fileName, data) {
-     
-//     inquirer
-//     .prompt(questions)
-//     .then((data) => {
-
-//         const template = generateMarkdown(data);
-
-//         fs.writeFile(
-//             './output/README.md', 
-//             template,
-            
-//             (err) =>
-//             err ? console.error(err) : console.log('Commit logged!')
-//         );
-  
-//     })
-
-//     .catch((error) => {
-//       if (error.isTtyError) {
-//         //Something
-//       } else {
-//         //Something
-//       }
-//     });
-// }
-
-//Initializing the application.
-// writeToFile();
-
-
-//////////
+// Writes the README.MD file.
 
 function writeToFile(fileName, data) {
 
@@ -98,8 +66,8 @@ function writeToFile(fileName, data) {
 
 }
 
+// Initializing application.
 
-//
 function init() {
     inquirer
     .prompt(questions)
@@ -107,8 +75,6 @@ function init() {
         writeToFile("./output/README.md", generateMarkdown(data));
 
     })
-
 }
 
-//
 init();
