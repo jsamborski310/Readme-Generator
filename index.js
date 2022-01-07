@@ -1,13 +1,114 @@
-// TODO: Include packages needed for this application
+// Packages needed for this application
 
-// TODO: Create an array of questions for user input
-const questions = [];
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// Array of questions for user input
 
-// TODO: Create a function to initialize app
-function init() {}
+const questions = [
+    {
+        type: "input",
+        message: "Provide the title of your application.",
+        name: "title"
+    },
+    {
+        type: "input",
+        message: "Describe your application.",
+        name: "description",
+       
+    }, 
+    {
+        type: "input",
+        message: "Provide installation instructions for your application.",
+        name: "installation",
+    },
+    {
+        type: "input",
+        message: "Provide usage information about your application.",
+        name: "usage",
+    },
+    {
+        type: "input",
+        message: "Provide contribution guidelines.",
+        name: "contributing",
+    },
+    {
+        type: "input",
+        message: "Provide instructions on how to test your application.",
+        name: "tests",
+    },
+    {
+        type: "checkbox",
+        message: "Select a license for your application.",
+        choices: ["MIT", "Apache", "Apache 2", "GPL", "compliant", "BSD"],
+        name: "license",
+    },
+    {
+        type: "input",
+        message: "Enter your GitHub username.",
+        name: "github",
+    },
+    {
+        type: "input",
+        message: "Enter your email address.",
+        name: "email"
+    }
+];
 
-// Function call to initialize app
+// Writes the README.MD file
+
+// function writeToFile(fileName, data) {
+     
+//     inquirer
+//     .prompt(questions)
+//     .then((data) => {
+
+//         const template = generateMarkdown(data);
+
+//         fs.writeFile(
+//             './output/README.md', 
+//             template,
+            
+//             (err) =>
+//             err ? console.error(err) : console.log('Commit logged!')
+//         );
+  
+//     })
+
+//     .catch((error) => {
+//       if (error.isTtyError) {
+//         //Something
+//       } else {
+//         //Something
+//       }
+//     });
+// }
+
+//Initializing the application.
+// writeToFile();
+
+
+//////////
+
+function writeToFile(fileName, data) {
+
+    fs.writeFile(fileName, data, (err) =>
+                err ? console.error(err) : console.log('Success!'))
+
+}
+
+
+//
+function init() {
+    inquirer
+    .prompt(questions)
+    .then(function(data) {
+        writeToFile("./output/README.md", generateMarkdown(data));
+
+    })
+
+}
+
+//
 init();
