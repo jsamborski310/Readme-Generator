@@ -2,10 +2,10 @@
 // If there is no license, return an empty string
 
 
-const badgeMit = "";
-const badgeApache = "";
-const badgeGpl = "";
-const badgeBsd = "";
+let badgeMit = "";
+let badgeApache = "";
+let badgeGpl = "";
+let badgeBsd = "";
 
 function renderLicenseBadge(data, license) {
   console.log("Testing license", license);
@@ -35,12 +35,14 @@ function renderLicenseBadge(data, license) {
 // // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 
-const licenseMit = "";
-const licenseApache = "";
-const licenseGpl = "";
-const licenseBsd = "";
+let licenseMit = "";
+let licenseApache = "";
+let licenseGpl = "";
+let licenseBsd = "";
 
 function renderLicenseLink(data, license)  {
+
+  console.log("Testing link");
 
     if(data.license.includes("MIT")) {
       licenseMit = "(https://opensource.org/licenses/MIT)";
@@ -58,7 +60,7 @@ function renderLicenseLink(data, license)  {
       licenseBsd = "(https://opensource.org/licenses/BSD-3-Clause)"
       console.log(licenseBsd);
     }
-    else if(badge.includes("None")) {
+    else if(data.license.includes("None")) {
       return "";
     }
 
@@ -66,19 +68,24 @@ function renderLicenseLink(data, license)  {
 // // TODO: Create a function that returns the license section of README
 // // If there is no license, return an empty string
 
-const licenses = ""; 
-const mit = "";
+// const licenses = ""; 
+// const mit = "";
 
-function renderLicenseSection(license) {
+function renderLicenseSection(data, license) {
 
-  mit = badgeMit.concat(licenseMit);
-  apache = badgeApache.concat(licenseApache);
+  renderLicenseBadge(data);
+  renderLicenseLink(data);
 
-  if(mit || apache) {
-    licenses += "";
-  } else {
-    return "";
-  }
+  return `
+
+    ${badgeMit}${licenseMit}
+    ${badgeApache}${licenseApache}
+    ${badgeGpl}${licenseGpl}
+    ${badgeBsd}${licenseBsd}
+
+`
+
+
 }
 
 // TODO: Create a function to generate markdown for README
@@ -86,7 +93,9 @@ function generateMarkdown(data) {
   
   return `
   
+  ${renderLicenseSection(data)}
   
+  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
  
   # ${data.title}
   
