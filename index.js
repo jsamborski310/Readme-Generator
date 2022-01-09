@@ -80,6 +80,7 @@ function init() {
 /////////////////////////////////////////////
 
         // BADGE
+        
         // const badge = data.license;
         
         // if(badge.includes("MIT")) {
@@ -123,29 +124,6 @@ function init() {
         // else if(badge.includes("None")) {
         //     console.log("");
         // }
-
-/////////////////
-        
-        // if(badge.includes("MIT")) {
-        //     const licenseMit = "(https://opensource.org/licenses/MIT)";
-        //     console.log(licenseMit);
-        // } 
-        // if(badge.includes("Apache 2.0")) {
-        //     const licenseApache = "(https://opensource.org/licenses/Apache-2.0)";
-        //     console.log(licenseApache);
-        // }
-        // if(badge.includes("GPL v3")) {
-        //     const licenseGpl = "(https://www.gnu.org/licenses/gpl-3.0)"
-        //     console.log(licenseGpl);
-        // }
-        // if(badge.includes("BSD 3")) {
-        //     const licenseBsd = "(https://opensource.org/licenses/BSD-3-Clause)"
-        //     console.log(licenseBsd);
-        // }
-        // else if(badge.includes("None")) {
-        //     console.log("");
-        // }
-
 
 
 /////////////////////////////////////////////
