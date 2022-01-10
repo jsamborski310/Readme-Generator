@@ -28,7 +28,7 @@ This application is not covered under a license.
 
 ## Usage
 
-https://www.loom.com/share/3c2a90f4e2634962a10e6cf78970a4c5
+https://www.loom.com/share/7cef8f9ee3fe4be2830acf5f2b7e15e0
 
 Right-click the application and open it in terminal. 
 
