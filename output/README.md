@@ -4,15 +4,15 @@
 
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+  
   
 
 
   
-  # f
+  # README.md Generator
   
   ## Description
-  f
+  llll
 
   ## Table of Contents
 
@@ -23,20 +23,24 @@
   * [Tests](#tests)
 
   ## Installation
-  f
+  lllll
+
+  ## License
+  This application is covered under the following license(s):
+  MIT,Apache 2.0
 
   ## Usage
-  f
+   ll
 
   ## Contributing
-  f
+  ll
 
   ## Tests
-  f
+  ll
 
   ## Questions?
   For questions about this application or if you would like to collaborate, reach out:
 
-  GitHub: <a href="https://github.com/"></a>
-  Email: <a href="mailto:f">f</a>
+  GitHub: <a href="https://github.com/ ;lll"> ;lll</a>
+  Email: <a href="mailto:lll">lll</a>
 

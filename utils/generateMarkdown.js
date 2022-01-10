@@ -6,8 +6,7 @@ let badgeGpl = "";
 let badgeBsd = "";
 
 function renderLicenseBadge(data, license) {
-  console.log("Testing license", license);
-
+  
         if(data.license.includes("MIT")) {
             badgeMit = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
         } 
@@ -34,8 +33,6 @@ let licenseGpl = "";
 let licenseBsd = "";
 
 function renderLicenseLink(data, license)  {
-
-  console.log("Testing link");
 
     if(data.license.includes("MIT")) {
       licenseMit = "(https://opensource.org/licenses/MIT)";
@@ -111,8 +108,7 @@ function generateMarkdown(data) {
   ## Questions?
   For questions about this application or if you would like to collaborate, reach out:
 
-  GitHub: <a href="https://github.com/${data.github}">${data.github}</a>
-  Email: <a href="mailto:${data.email}">${data.email}</a>
+  GitHub: <a href="https://github.com/${data.github}">GitHub</a> and/or <a href="mailto:${data.email}">Email</a>
 
 `;
 }
