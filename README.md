@@ -19,6 +19,7 @@ Clone the repository onto your local environment.
 The following dependancies, listed in `package.json` must be installed to run this application: 
 
 `npm install inquirer`
+
 `npm install fs`
 
 ## License
@@ -41,5 +42,5 @@ A sample test has been generated. Check out the sampleREADME.md in the root.
 
 ## Questions
 
-For questions about this application or if you would like to collaborate, connect with me on <a href="https://www.linkedin.com/in/juanita-samborski/">Linkedin</a>
+For questions about this application or if you would like to collaborate, connect with me on <a href="https://www.linkedin.com/in/juanita-samborski/" target="_blank">Linkedin</a>.
 
