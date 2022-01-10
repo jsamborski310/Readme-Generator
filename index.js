@@ -62,7 +62,7 @@ const questions = [
 function writeToFile(fileName, data) {
 
     fs.writeFile(fileName, data, (err) =>
-                err ? console.error(err) : console.log('Your README.md has been successfully generated!'))
+                err ? console.error(err) : console.log('Your README.md has been successfully generated! Locate it in the Output folder.'))
 
 }
 
