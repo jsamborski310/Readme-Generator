@@ -39,7 +39,5 @@
   Open the application in your terminal by right-clicking index.js. Type node index.js in the terminal. You will receive questions to which you may answer. 
 
   ## Questions?
-  For questions about this application or if you would like to collaborate, reach out:
-
-  GitHub: <a href="https://github.com/jsamborski310">GitHub</a> and/or <a href="mailto:juanita@breakthroughwebsite.com">Email</a>
+  For questions about this application or if you would like to collaborate, reach out: <a href="https://github.com/jsamborski310">GitHub</a> and/or <a href="mailto:juanita@breakthroughwebsite.com">Email</a>
 
